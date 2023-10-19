@@ -20,7 +20,7 @@ export default function Land(p) {
   })
   return (
 data&&<div className='flex  flex-auto overflow-x-scroll overflow-hidden '>
-{data.map((data)=>(<div key={data.data.id} ><Card data={data} /></div>))}
+{data.map((data)=>(<div key={data.data.title.slice(0,8)} ><Card data={data} /></div>))}
 </div>
   )
   }
