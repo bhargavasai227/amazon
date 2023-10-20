@@ -32,9 +32,33 @@ div::-webkit-scrollbar {
   display: none;
 }
 
-body{
+/* body{
   background: radial-gradient(circle, transparent 25%, #403c3c  26%),linear-gradient(45deg, transparent 46%, #474657 47%, #474657 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #474657 47%, #474657 52%, transparent 53%);
         background-size: 2em 2em;
         background-color: #403c3c;
         opacity: 1
+} */
+body {
+  background: linear-gradient(305deg, #25606c,black, #541b1b);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 17s ease infinite;
+  -moz-animation: AnimationName 17s ease infinite;
+  animation: AnimationName 17s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 75%}
+  50%{background-position:100% 26%}
+  100%{background-position:0% 75%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 75%}
+  50%{background-position:100% 26%}
+  100%{background-position:0% 75%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 75%}
+  50%{background-position:100% 26%}
+  100%{background-position:0% 75%}
 }
