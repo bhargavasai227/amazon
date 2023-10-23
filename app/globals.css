@@ -27,8 +27,13 @@ img:hover{
 div::-webkit-scrollbar {
   display: none;
 }
-
-body {
+body{
+  background-color: rgb(243, 243, 243);
+}
+.ring-0{
+  box-shadow: 0 4px 8px 0 rgba(133, 129, 129, 0.2), 0 6px 20px 0 rgba(161, 158, 158, 0.19);
+}
+bodyo {
   background: linear-gradient(305deg, #25606c,black, #541b1b);
   background-size: 1000% 1000%;
 
@@ -53,6 +58,7 @@ body {
   100%{background-position:0% 75%}
 }
 button{
+  box-shadow: 0 4px 8px 0 rgba(133, 129, 129, 0.2), 0 6px 20px 0 rgba(161, 158, 158, 0.19);
   height: 2rem;
   width: 8rem;
   background-color: orange;
@@ -63,16 +69,18 @@ h1{
   font-size: large;
 }
 img{
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(183, 181, 181, 0.2), 0 6px 20px 0 rgba(161, 158, 158, 0.19);
   width: 70%;
 }
 #main{
-  margin-bottom:1rem ;
+  margin:1rem 0 ;
   border-radius: 1rem;
-  box-shadow: 0 4px 8px 0 rgba(183, 181, 181, 0.2), 0 6px 20px 0 rgba(161, 158, 158, 0.19);
+  
   padding: 2rem;
 }
 #main:hover{
-  transform:scale(1.1);
+  transform:scale(1.05);
 }
 @media screen and (min-width:700px){
  #main {

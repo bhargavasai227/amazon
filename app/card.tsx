@@ -9,7 +9,7 @@ export default function Card(p: { data: { title: string; category: string | null
     
 }
 return(
-<div className="m-2 bg-white w-[10rem] h-full p-3 rounded-lg py-2 " key={p.data.title.slice(0,8)} onClick={clicked}><div>
+<div className="m-2 bg-white w-[10rem] h-full p-3 rounded-lg py-2 drop-shadow-xl " key={p.data.title.slice(0,8)} onClick={clicked}><div>
 <h3 className="bg-red-300 m-l pl-1">{p.data.category}</h3>
     <h4>{p.data.title.slice(0,20)+"..."}</h4>
     <div className="h-full w-[90%] object-cover ">
