@@ -1,11 +1,12 @@
+'use client';
 import {useRouter} from "next/navigation";
 import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, PromiseLikeOfReactNode } from "react"
-export default function card(p: { data: { title: string; category: string | null | undefined; image: string | undefined; price: string  | null | undefined; description: string } }){
+
+export default function Card(p: { data: { title: string; category: string | null | undefined; image: string | undefined; price: string  | null | undefined; description: string } }){
     const router =useRouter()
     function clicked(){
    
     router.push(`/${p.data.category}?name=${p.data.title}`)
-    alert(p.data.title)
     
 }
 return(

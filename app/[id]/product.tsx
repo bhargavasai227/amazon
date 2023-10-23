@@ -1,9 +1,28 @@
-export default function product(p: { p: any; }){
-    const data=p.p
-    console.log(data);
-    
-return(
-    <div>{decodeURI(data.params.id)}</div>
+import { useEffect,useState } from "react";
+import Card from "../card";
+import Main from "./Main";
 
-)
+export default function Product(p: { p: any; }){   
+   const [data,setD]=useState<any[]>([])
+    useEffect(()=>{
+        fetch('https://fakestoreapi.com/products/category/'+p.p.params.id)
+            .then(res=>res.json())
+            .then(json=>setD(json))
+            .catch(e=>{console.log(e)})
+    },[])
+    const pro=p.p.searchParams.name;
+    const main = data.filter(e=>e.title==pro);
+    return (
+        data&&<div>
+        <div><Main p={main}/></div>
+        <div className=" m-1 text-white"><h1>more products like ABOVE</h1></div>
+        <div className='flex  flex-auto overflow-x-scroll overflow-hidden '>
+            
+        {data.map((data)=>(
+        <div key={data.id} ><Card data={data} /></div>
+          ))}
+        </div>
+        </div>
+          )
+
 }

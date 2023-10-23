@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,28 +18,16 @@
   }
 }
 
-
-h4,h3{
-  color: rgb(18, 13, 3);
-}
 img:hover{
   mix-blend-mode: multiply;
   transform: scale(0.9);
-  transition: ease-in-out
+  transition: 2s ease-in-out
 }
-img{
-  max-width: 70%;
-}
+
 div::-webkit-scrollbar {
   display: none;
 }
 
-/* body{
-  background: radial-gradient(circle, transparent 25%, #403c3c  26%),linear-gradient(45deg, transparent 46%, #474657 47%, #474657 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #474657 47%, #474657 52%, transparent 53%);
-        background-size: 2em 2em;
-        background-color: #403c3c;
-        opacity: 1
-} */
 body {
   background: linear-gradient(305deg, #25606c,black, #541b1b);
   background-size: 1000% 1000%;
@@ -61,4 +51,26 @@ body {
   0%{background-position:0% 75%}
   50%{background-position:100% 26%}
   100%{background-position:0% 75%}
+}
+button{
+  height: 2rem;
+  width: 8rem;
+  background-color: orange;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+h1{
+  font-size: large;
+}
+img{
+  width: 70%;
+}
+#main{
+  padding: 2rem;
+}
+@media screen and (min-width:700px){
+ #main {
+    width: 35%;
+  }
+  
 }

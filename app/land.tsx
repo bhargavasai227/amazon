@@ -1,14 +1,7 @@
 'use client'
 import { useState,useEffect } from 'react'
 import Card from './card'
-interface typed {
-  id:number;
-  title:string;
-  price:string;
-  category:string;
-  description:string;
-  image:string;
-}
+
 export default function Land(p) {
   var [data,setdata] =useState<any[]>([])
   useEffect(()=>{
