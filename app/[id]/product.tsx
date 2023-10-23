@@ -14,7 +14,10 @@ export default function Product(p: { p: any; }){
     const main = data.filter(e=>e.title==pro);
     return (
         data&&<div>
-        <div><Main p={main}/></div>
+        <div><Main p={main} title={undefined} image={undefined} id={undefined} price={undefined} rating={{
+                rate: undefined,
+                count: undefined
+            }} description={undefined}/></div>
         <div className=" m-1 text-white"><h1>more products like ABOVE</h1></div>
         <div className='flex  flex-auto overflow-x-scroll overflow-hidden '>
             
