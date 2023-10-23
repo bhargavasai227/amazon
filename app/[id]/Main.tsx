@@ -5,7 +5,7 @@ export default function Main(p: { p: any[]; title: string | number | boolean | R
    p=p.p[0]
     
     return(
-       p.title&& <div>
+       p&& <div>
             <div className="bg-white p-5 m-2 rounded-md">
                 <div>
                 <h1>{p.title}</h1>
