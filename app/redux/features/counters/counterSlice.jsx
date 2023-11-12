@@ -12,7 +12,6 @@ export const counterSlice = createSlice({
   reducers: {
     inserto:(state,action)=>{
      state.value=[...state.value,action.payload]
-     console.log(state.value);
     },
     
   },

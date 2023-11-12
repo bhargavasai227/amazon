@@ -9,7 +9,7 @@ export default function Navbar(){
             Your Logo
           </Link>
 
-          <div className="hidden md:flex space-x-4">
+          <div className="flex space-x-4">
             <Link href="/">
               Home
             </Link>
