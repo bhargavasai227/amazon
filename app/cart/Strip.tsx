@@ -9,13 +9,13 @@ async function handleCheckout() {
         },
       ],
       mode: 'subscription',
-      successUrl: `http://localhost:3000/success`,
-      cancelUrl: `http://localhost:3000/cancel`,
+      successUrl: `https://amazon-rwjj.vercel.app/`,
+      cancelUrl: `https://amazon-rwjj.vercel.app/cancel`,
       customerEmail: 'customer@email.com',
     });
     console.warn(error.message);
   }
 
   export default function Stripe(){
-    return <button className='rounded-[2.2rem] w-32 h-16 max-h-24 relative  bottom-[-3] bg-orange-500 m-11 p-4 ' onClick={handleCheckout}>stripe</button>
+    return <button className='rounded-[2.2rem] w-32 h-16 max-h-24 relative  bottom-[-3] bg-orange-500 m-11 p-4 ' onClick={handleCheckout}>{window.location.href}</button>
   }
