@@ -1,4 +1,4 @@
-"use client"; //this is a client side component
+"use client"; 
 
 import { createSlice } from "@reduxjs/toolkit";
 
@@ -17,6 +17,6 @@ export const counterSlice = createSlice({
   },
 });
 
-export const { increment, decrement, incrementByAmount,inserto } = counterSlice.actions
+export const { inserto } = counterSlice.actions
 
 export default counterSlice.reducer;
