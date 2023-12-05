@@ -10,7 +10,7 @@ const Total = () => {
     return total + item.price;
   }, 0);
 
-  return <div className="fixed bottom-0 w-full flex ">
+  return <div className="fixed bottom-0 w-full flex max-h-60 ">
    <div className=" m-3 w-3/4 bg-gray-800 p-5 text-white rounded-md">
     <div className="my-4">{items.map((e:{title:string,price:string,id:number})=>(<div key={e.id} className="flex justify-between "><span>{e.title}</span><p className="text-yellow-300">${e.price}</p></div>))}
     <hr/>

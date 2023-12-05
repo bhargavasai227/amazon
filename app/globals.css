@@ -18,7 +18,7 @@
   }
 }
 
-img:hover{
+img .Mimg:hover{
   mix-blend-mode: multiply;
   transform: scale(0.9);
   transition: 2s ease-in-out
@@ -68,7 +68,7 @@ button{
 h1{
   font-size: large;
 }
-img{
+img .Mimg{
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(183, 181, 181, 0.2), 0 6px 20px 0 rgba(161, 158, 158, 0.19);
   width: 70%;
@@ -92,4 +92,8 @@ img{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); 
   gap: 1rem
+}
+.gif{
+  mix-blend-mode: multiply;
+  width: 2rem;
 }

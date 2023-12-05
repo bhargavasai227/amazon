@@ -1,5 +1,5 @@
 export default function Loading() {
-    console.log("app");
+
     return (<div className="bg-gray-300 w-full h-full fixed text-center" >
       
   
